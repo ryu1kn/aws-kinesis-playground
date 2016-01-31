@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.2.32",
-    "json5": "^0.4.0",
-    "object-assign": "^4.0.1"
+    "json5": "^0.4.0"
   }
 }
