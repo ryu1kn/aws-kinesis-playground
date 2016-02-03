@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --harmony_default_parameters --harmony_rest_parameters index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --recursive"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,10 @@
   "dependencies": {
     "aws-sdk": "^2.2.32",
     "json5": "^0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
   }
 }

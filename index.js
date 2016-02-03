@@ -5,7 +5,10 @@ let AWS = require('aws-sdk');
 let JsConfig = require('./lib/config');
 let KinesisClient = require('./lib/kinesis-client');
 
-let config = new JsConfig('./app.conf');
+let config = new JsConfig({
+    fs: require('fs'),
+    loadPath: './app.conf'
+});
 
 let kinesis = new AWS.Kinesis({
   accessKeyId: config.get('aws.accessKeyId'),
